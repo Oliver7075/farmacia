@@ -1,0 +1,39 @@
+#ubi{
+    text-align: center;
+}
+#ubi h2{
+    text-align: center;
+    margin: 50px;
+}
+#ubi p{
+    margin-left: 80px;
+    font-size: 17px;
+}
+.contenedor6{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#ubi iframe{
+    width: 30%;
+}
+/*---Reponsive---*/
+/*---Dispositivo movil---*/
+@media(max-width:450px){
+    #ubi iframe{
+        width: 70%;
+        height: 35%;
+    }
+    #ubi h2{
+        margin: 20px;
+    }
+    #ubi p{
+        margin-left: 20px;
+        margin-top: 20px;
+        font-size: 14px;
+        text-align: justify;
+    }
+    .contenedor6{
+        display: block;
+    }
+}

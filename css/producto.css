@@ -1,0 +1,30 @@
+#pro{
+    padding: 15px;
+    background-color: blueviolet;
+    text-align: center;
+}
+#pro article{
+    margin: 20px;
+}
+#pro img{
+    width: 100%;
+    max-width: 240px;
+    height: 100%;
+    max-height: 200px;
+    border-radius: 90px;
+}
+.contenedor4{
+    display: flex;
+    justify-content: center;
+}
+/*---Reponsive---*/
+/*---Dispositivo movil---*/
+@media(max-width:450px){
+    #pro img{
+        max-width: 200px;
+        max-height: 150px;
+    }
+    .contenedor4{
+        display: block;
+    }
+}

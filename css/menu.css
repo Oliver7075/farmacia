@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+header{
+    position: fixed;
+    width: 100%;
+    background-color:darkorange;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+h1{
+    margin-top: 10px;
+    float: left;
+}
+.contenedor1{
+    width: 98%;
+    margin: auto;
+}
+#menu-bar{
+    display: none;
+}
+.menu{
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: darkorange;
+    transition: all .5s;
+    transform: translateX(100%)
+}
+.menu a{
+    display: block;
+    color: black;
+    height: 50px;
+    text-decoration: none;
+    padding: 15px;
+    border: 2px solid black;
+}
+header label{
+    font-size: 20px;
+    float: right;
+    margin: 6px 0;
+    padding: 10px;
+    cursor: pointer;
+}
+header .contenedor1{
+    display: table;
+}
+#menu-bar:checked ~ .menu {
+    transform: translateX(0%);
+}
+/*---Reponsive---*/
+/*---Dispositivo movil---*/
+@media(max-width:450px){
+    header h1{
+        margin-top: 10px;
+        font-size:20px;
+    }
+    .menu a{
+        background-color:rgb(155, 114, 38);
+    }
+    .menu a:hover{
+        background-color: antiquewhite;
+    }
+}
+/*---Escritorio---*/
+@media(min-width:1024px){
+    .menu{
+        position: static;
+        width: auto;
+        height: auto;
+        transform: translateX(0%);
+        float: right;
+        display: flex;
+        margin-right: 70px;
+    }
+    .menu a{
+        border: none;
+    }
+    .menu a:hover{
+        text-decoration: underline;
+        color:grey;
+    }
+    header label{
+        display: none;
+    }
+}

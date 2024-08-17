@@ -1,0 +1,58 @@
+@import url(menu.css);
+@import url(producto.css);
+@import url(info.css);
+@import url(ubi.css);
+@import url(footer.css);
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    line-height: 40px;
+}
+#banner{
+    position: relative;
+    margin-top: 100px;
+}
+#banner img{
+    width: 100%;
+}
+#banner .contenedor2{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+#banner a{
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    padding: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#banner a:hover{
+    background-color:darkgray;
+    color:teal;
+}
+section{
+    margin-top: 40px;
+}
+#rec{
+    margin: 80px;
+    text-align: center;
+}
+/*---Reponsive---*/
+/*---Dispositivo movil---*/
+@media(max-width:450px){
+    body{
+        line-height: 25px;
+    }
+    #banner img{
+        height: 200px;
+    }
+    #banner .contenedor2{
+        color:black;
+    }
+}
